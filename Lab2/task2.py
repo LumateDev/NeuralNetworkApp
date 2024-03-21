@@ -10,7 +10,7 @@ class Point:
 
 class Neuron:
     def step_function(self, x):
-        return max(0, x)
+        return 1 if x >= 0 else -1
 
 
 class Perceptron(Neuron):
